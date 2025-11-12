@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './Header'
-import Core from './Coreconcept.jsx'
-import img from './assets/react.svg'
+import Header from './components/Header.jsx'
+import Core from './components/Coreconcept.jsx'
 import { CORE_CONCEPTS } from './data.js'
 
 
@@ -20,14 +19,12 @@ function App() {
     <main>
       <section id="core-concept">
         <h2>Core Concept</h2>
-
-    <ul>
+        <ul>
       <Core title={CORE_CONCEPTS[0].title} description={CORE_CONCEPTS[0].description} />
       <Core title={CORE_CONCEPTS[1].title} description={CORE_CONCEPTS[1].description} />
       <Core title={CORE_CONCEPTS[2].title} description={CORE_CONCEPTS[2].description} />
       <Core title={CORE_CONCEPTS[3].title} description={CORE_CONCEPTS[3].description} />
-    </ul>
-      
+      </ul>
       </section>
     </main>
   
