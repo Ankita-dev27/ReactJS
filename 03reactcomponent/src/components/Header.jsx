@@ -1,6 +1,5 @@
 import reactImg from '../assets/react.svg';
-
-
+import './Header.css'
 function Header(){
     return(
         <>       
