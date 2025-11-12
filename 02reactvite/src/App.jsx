@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import One from './one.jsx'
 function App() {
@@ -8,10 +6,9 @@ function App() {
 
   return (
     <>
-      <h1>Hello Ankita react + vite project</h1>
       <One/>
     </>
-    //fragment jsx sentax jsx
+    //fragment jsx syntax jsx
 
   )
 }
