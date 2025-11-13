@@ -1,11 +1,11 @@
 
 
-function Core(props){
+function Core({title, description}){
 
     return(
         <li>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>        
+            <h3>{title}</h3>
+            <p>{description}</p>        
         </li>
     )
 
