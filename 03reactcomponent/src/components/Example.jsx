@@ -16,10 +16,7 @@ let [selected , setselected] = useState('components')
     setselected(selectedArgument)
   }
     return(
-<>
-
-  
-
+      
    <Section title= "Select Example" id="example">
         <menu>
           <Tabbutton onClick={()=>handleSelect('components')}>Components</Tabbutton>
@@ -39,7 +36,7 @@ let [selected , setselected] = useState('components')
       </div>
     </Section>
     
-</>
+
 
     )
 }
