@@ -1,8 +1,8 @@
 
 
-function Tabbutton({children, onSelect}){
+function Tabbutton({children, ...props}){
     return(
-        <button onClick={onSelect}>{children}</button>
+        <button {...props}>{children}</button>
     )
 }
 

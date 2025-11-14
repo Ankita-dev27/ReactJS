@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { EXAMPLES } from "../data"
 import Tabbutton from "./Tabbutton"
+import Section from "./Section"
 
 
 
@@ -17,15 +18,16 @@ let [selected , setselected] = useState('components')
     return(
 <>
 
-   <section id="example">
-        <h2>Example</h2>
+  
+
+   <Section title= "Select Example" id="example">
         <menu>
-          <Tabbutton onSelect={()=>handleSelect('components')}>Components</Tabbutton>
-          <Tabbutton onSelect={()=>handleSelect('jsx')}>JSX</Tabbutton>
-          <Tabbutton onSelect={()=>handleSelect('props')}>props</Tabbutton>
-          <Tabbutton onSelect={()=>handleSelect('state')}>state</Tabbutton>
+          <Tabbutton onClick={()=>handleSelect('components')}>Components</Tabbutton>
+          <Tabbutton onClick={()=>handleSelect('jsx')}>JSX</Tabbutton>
+          <Tabbutton onClick={()=>handleSelect('props')}>props</Tabbutton>
+          <Tabbutton onClick={()=>handleSelect('state')}>state</Tabbutton>
         </menu>
-    </section>
+  
       <div>
         <h3>{EXAMPLES[selected].title}</h3>
         <p>{EXAMPLES[selected].description}</p>
@@ -35,6 +37,7 @@ let [selected , setselected] = useState('components')
          </code>
         </pre>
       </div>
+    </Section>
     
 </>
 
